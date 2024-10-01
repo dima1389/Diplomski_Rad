@@ -22,8 +22,10 @@ code --version
 @rem Prikazuje putanju do VSCode izvršne datoteke
 where code
 
-@rem Git komanda koja preuzima projekat sa GitHub-a u folder diplomski_projekat
-git clone https://github.com/dima1389/Diplomski_Rad.git diplomski_projekat
+pause
 
-echo Okruženje je uspešno postavljeno.
+@rem Git komanda koja preuzima projekat sa GitHub-a i smešta ga u folder diplomski_projekat
+git clone https://github.com/dima1389/Diplomski_Rad.git diplomski_projekat_ee3_2016
+
+echo Okruzenje je uspesno postavljeno.
 pause
