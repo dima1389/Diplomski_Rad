@@ -1,10 +1,10 @@
+@rem File: setup_environment.bat
+
 @rem *******************************************
 @rem * Batch Skripta za Postavljanje Okruženja *
 @rem *******************************************
 
-@rem Pokretanje PowerShell-a bez učitavanja profila, bez ulaznog formata,
-@rem i sa policy-jem za zaobilaženje ograničenja izvršavanja.
-@rem Ova komanda preuzima i izvršava instalacioni skript za Chocolatey
+@rem Ova komanda preuzima i izvršava instalacionu skriptu za Chocolatey
 @rem sa zvaničnog Chocolatey sajta.
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
