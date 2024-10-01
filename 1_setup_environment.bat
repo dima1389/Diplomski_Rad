@@ -1,4 +1,4 @@
-@rem File: setup_environment.bat
+@rem File: 1_setup_environment.bat
 
 @rem *******************************************
 @rem * Batch Skripta za Postavljanje Okruženja *
@@ -12,32 +12,9 @@
 @rem Opcija -y automatski potvrđuje instalaciju bez potrebe za korisničkim unosom.
 choco install git openssl python vscode -y
 
+@rem Pauza pre osvežavanja okruženja kako bi korisnik mogao da vidi instal log
+pause
+
 @rem Osvežavanje okruženja kako bi se nove promene u PATH varijabli odmah primenile
 @rem u trenutnoj sesiji komandnog prompta.
 refreshenv
-
-@rem Provera instalacija
-
-@rem Prikazuje verziju Git-a kako bi potvrdio uspešnu instalaciju
-git --version
-@rem Prikazuje putanju do Git izvršne datoteke
-where git
-
-@rem Prikazuje verziju OpenSSL-a kako bi potvrdio uspešnu instalaciju
-openssl version
-@rem Prikazuje putanju do OpenSSL izvršne datoteke
-where openssl
-
-@rem Prikazuje verziju Python-a kako bi potvrdio uspešnu instalaciju
-python --version
-@rem Prikazuje putanju do Python izvršne datoteke
-where python
-
-@rem Prikazuje verziju VSCode-a kako bi potvrdio uspešnu instalaciju
-code --version
-@rem Prikazuje putanju do VSCode izvršne datoteke
-where code
-
-@rem Kraj skripte
-echo Okruženje je uspešno postavljeno.
-pause

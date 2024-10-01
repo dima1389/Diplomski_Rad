@@ -1,4 +1,4 @@
-@rem File: build.bat
+@rem File: 3_build.bat
 
 @rem *********************************************
 @rem * Ova batch skripta kompajlira i linkuje C kod za ARM Cortex-m7 mikrokontroler.

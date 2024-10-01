@@ -1,4 +1,4 @@
-@rem Fajl: generate_keys_hash_signature.bat
+@rem Fajl: 4_generate_keys_hash_signature.bat
 
 @rem Ova skripta generiše RSA par ključeva (privatni i javni ključ), izračunava SHA256 heš fajla main.bin,
 @rem potpisuje heš privatnim ključem, verifikuje potpis i spaja potpis sa originalnim fajlom.
