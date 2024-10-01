@@ -27,5 +27,8 @@ pause
 @rem Git komanda koja preuzima projekat sa GitHub-a i smešta ga u folder diplomski_projekat
 git clone https://github.com/dima1389/Diplomski_Rad.git diplomski_projekat_ee3_2016
 
+@rem Otvori projektni folder u VSCode-u
+code diplomski_projekat_ee3_2016
+
 echo Okruzenje je uspesno postavljeno.
 pause
