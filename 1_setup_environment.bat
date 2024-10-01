@@ -8,9 +8,9 @@
 @rem sa zvaničnog Chocolatey sajta.
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
-@rem Instalacija Git, OpenSSL i Python alata koristeći Chocolatey paket menadžer.
+@rem Instalacija Git, OpenSSL, Python, i VSCode alata koristeći Chocolatey paket menadžer.
 @rem Opcija -y automatski potvrđuje instalaciju bez potrebe za korisničkim unosom.
-choco install git openssl python -y
+choco install git openssl python vscode -y
 
 @rem Osvežavanje okruženja kako bi se nove promene u PATH varijabli odmah primenile
 @rem u trenutnoj sesiji komandnog prompta.
@@ -32,6 +32,11 @@ where openssl
 python --version
 @rem Prikazuje putanju do Python izvršne datoteke
 where python
+
+@rem Prikazuje verziju VSCode-a kako bi potvrdio uspešnu instalaciju
+code --version
+@rem Prikazuje putanju do VSCode izvršne datoteke
+where code
 
 @rem Kraj skripte
 echo Okruženje je uspešno postavljeno.
